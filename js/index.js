@@ -70,3 +70,11 @@ $(document).scroll(function () {
             up_bottom = true;
         }
 });
+
+$(".heart").click( function(){
+    var max_heart = $(this).attr("data-num");
+    $(".heart").attr( "src", "imagen/heart_black.png" );
+    for( var i=1 ; i <= max_heart ; i++ ){
+        $(".heart"+i).attr( "src", "imagen/heart_red.png" );
+    }
+});

@@ -19,7 +19,7 @@ html{
 }
 body{
     margin: auto;
-    min-width: 800px;
+    min-width: 820px;
     position: relative;
    
 }
@@ -47,13 +47,15 @@ body{
     font-weight: bolder;
     z-index: 999;
 }
-/* top menu features
+/* top menu nav bar
 --------------------------------------------------------------------------------------- */
 .nav_bar{
     /* border: rgba(0, 0, 0, 0.61) 2px solid; */
     background-color: rgba(148, 146, 146, 0.219); 
     border-radius: 3px;
-    box-shadow: 0px 5px 15px 0px black;
+    box-shadow: 0px 5px 15px 0px rgba(88, 86, 86, 0.644);
+    /* border-bottom: 2px solid rgba(107, 101, 101, 0.61); */
+
 }
 .nav_bar_logo_text{
     display: inline-block;
@@ -84,16 +86,19 @@ body{
     cursor: pointer;
     font-weight: bold;
 }
-.drop:hover{
-    border-bottom: rgb(8, 8, 8) 1.9px solid;
+.drop:hover , .caret:hover{
+    /* border-bottom: rgb(8, 8, 8) 1.9px solid; */
+    text-decoration: underline;
 }
 
-/* section banner features
+/* section banner clock and phone
 ----------------------------------------------------------------------------------------- */
 
 .banner{
     height: 230px;
     background-color:rgba(255, 0, 255, 0.308);
+    border-bottom: 5px solid rgba(88, 88, 88, 0.425);
+    border-top: 4.5px solid rgba(88, 88, 88, 0.425);
 }
 .banner_text{
     width: 64.9%;
@@ -152,7 +157,7 @@ blockquote{
     float: right;
     width: 38%;
     min-width: 390px;
-    background:  url(imagen/IMG_20210110_112351_368.jpg)  no-repeat  center;
+    background:  url(../imagen/IMG_20210110_112351_368.jpg)  no-repeat  center;
     background-size: contain;
 }
 
@@ -191,7 +196,7 @@ article{
 .tab{
     /* border: 3px solid rgba(80, 77, 77, 0.562); */
     width: 41%;
-    height: 400px;
+    height: 330px;
 }
 .article_img_1 img{
     max-width: 100%;
@@ -199,6 +204,16 @@ article{
 .tab_1{
     float: left;
     margin: 80px 0px 0px 3.5%;
+}
+#name1{
+    font-size: 40px;
+    margin: 60px auto;
+    text-align: center;
+    
+}
+ .tab .nav .active a:hover,.tab ul.nav li.active a{
+    color: rgb(24, 23, 23);
+    background-color: rgba(128, 120, 120, 0.356);
 }
 .tab-content  div{
     list-style: none;
@@ -226,12 +241,40 @@ article{
 .nav{
     font-size: 17px;
 }
+.list-group{
+    background-color: inherit;
+    width: 400px;
+    margin: -15px 0px 0px 50px;
+}
+.list-group li{
+    background-color: rgba(255, 255, 255, 0.603);
+    color: black;
+    font-weight: 500;
+    font-size: 18px;
+    
+}
 
+.heart_cont{
+    width: 290px;
+    /* border: solid black 3px; */
+    float: right;
+    margin: -120px 8% 0px 0px;
+    text-align: center;
+    color: black;
+    font-weight: 600;
+}
+.heart{
+    width: 50px;
+    cursor: pointer;
+}
 .carrusel_productos{
     border: black 2px solid;
     font-size: 50px;
     text-align: center;
     padding: 190px 50px;
+}
+.carrusel_productos h1{
+    font-size: 65px;
 }
 
 /* section sevice features
@@ -523,7 +566,7 @@ form .btn{
     margin: 40px 0px 0px 5%;
     height: 210px;
 }
-.divider{
+.divide{
     clear: both;
     border: solid rgb(90, 84, 84) 2px;
     margin: 270px 20% 20px;

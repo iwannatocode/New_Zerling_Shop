@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="q.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
     <link href="css/photoswipe.css" rel="stylesheet" />
     <link href="css/default-skin.css" rel="stylesheet" />
-    <title>Q</title>
+    <title>Zerling 's Shop</title>
 </head>
 <body>
     <nav id="n" class="nav_bar" role="navigation">
@@ -16,12 +16,13 @@
         <ul class="top_menu">
             <li><a class="" href="#">Home</a></li>            
             <li class="dropdown">
-                <h2 class="dropdown-toggle drop" data-toggle="dropdown" >Dropdown</h2>
+                <h2 class="dropdown-toggle drop" data-toggle="dropdown" >Dropdown<span class="caret"></span></h2>
                 <ul class="sub_menu dropdown-menu">
                     <li><a href="">First item</a></li>
-                    <li><a href="">First item</a></li>
-                    <li><a href="">First item</a></li>
-                    <li><a href="">First item</a></li>
+                    <li><a href="">Second item</a></li>
+                    <li><a href="">Third item</a></li>
+                    <li class="divider"></li>
+                    <li class="disabled"><a href="">Fourth item</a></li>
                 </ul>                
             </li>            
             <li><a class="" href="#s">Service</a></li>
@@ -54,7 +55,7 @@
 
         <section class="presentation">
             <div class="presentation_background">
-                <!-- <img  class="presentation_img" src="image/IMG_20210110_112351_368.jpg" alt=""> -->
+<!-- <img  class="presentation_img" src="image/IMG_20210110_112351_368.jpg" alt=""> -->
             </div>
             <div class="div_logo">
                 <div class="logo_icon"></div>
@@ -71,35 +72,43 @@
             <article class="article_one">
                 <!-- ver si es nesesario este div -->
                 <div>
+
                     <div role="tabpanel" class="tab_1 tab">
                             <!-- Nav tabs -->
                             <ul class="nav nav-tabs" role="tablist">
-                                <li role="presentation" class="active ">
+                                <li role="navigation" class="active ">
+                                    <a href="#name1" role="tab" data-toggle="tab">Name</a>
+                                </li>
+                                <li role="navigation" class="">
                                     <a href="#description_1" role="tab" data-toggle="tab">Description</a>
                                 </li>
-                                <li role="presentation" class="">
+                                <li role="navigation" class="">
                                     <a href="#stats_1" role="tab" data-toggle="tab" >Stats</a>
                                 </li>
-                                <li role="last_result" class="">
+                                <li role="navigation" class="">
                                     <a href="#last_result" role="tab" data-toggle="tab" >Last result</a>
                                 </li>
                             </ul>
                         
-                            <!-- Tab panes -->
+
+                            <!-- Tab panel -->
                             <div class="tab-content">
-                                <div role="tabpanel" class="tab-pane active descript_1" id="description_1">
+                                <div role="tabpanel" class="tab-pane active " id="name1">
+                                    Boniato
+                                </div>
+                                <div role="tabpanel" class="tab-pane descript_1" id="description_1">
                                     This is a pretty Zerling, who kills everybody that intendt to hurt you. Loyal, a
                                     confidence to death and good friend. Can be used like a small table or what do you like.
                                 </div>
                                 <div role="tabpanel" class="tab-pane present_1" id="stats_1">
                                     <ul>
                                         <li><strong>Streng</strong>: 8</li>
-                                        <li><strong>Agility</strong>: 8</li>
-                                        <li><strong>Intelligent</strong>: 8</li>
-                                        <li><strong>Speed</strong>: 8</li>
-                                        <li><strong>Ranged</strong>: 8</li>
-                                        <li><strong>Accuracy</strong>: 8</li>
-                                        <li><strong>Luck</strong>: 8</li>
+                                        <li><strong>Agility</strong>: 6</li>
+                                        <li><strong>Intelligent</strong>: 2</li>
+                                        <li><strong>Speed</strong>: 7</li>
+                                        <li><strong>Ranged</strong>: 0</li>
+                                        <li><strong>Accuracy</strong>: 9</li>
+                                        <li><strong>Luck</strong>: 5</li>
                                     </ul>
                                 </div>
                                 <div id="last_result" class="tab-pane result_1" role="tabpanel">
@@ -115,12 +124,30 @@
                 </div>
                 <div class="article_img article_img_1">
                     <img src="imagen/zer.jpg" class="" alt="Image">
+                </div>               
+                <div class="cf">                 
+                    <ul class="list-group">
+                        <li class="list-group-item">Opinions<span class="badge">24</span></li>
+                        <li class="list-group-item">Comments<span class="badge">2</span</li>
+                        <li class="list-group-item">Other<span class="badge">6</span</li>
+                    </ul>                    
                 </div>
-
+                <div class=" heart_cont">
+                    <h3>Raiting US</h3>
+                    <img class="heart heart1" src="imagen/heart_black.png"  data-num="1" alt="">
+                    <img class="heart heart2" src="imagen/heart_black.png" data-num="2" alt="">
+                    <img class="heart heart3" src="imagen/heart_black.png" data-num="3" alt="">
+                    <img class="heart heart4" src="imagen/heart_black.png" data-num="4" alt="">
+                    <img class="heart heart5" src="imagen/heart_black.png" data-num="5" alt="">
+                </div> 
             </article>
             <article class="carrusel_productos cf">
                 Bueno, aki va un carrusel con los principales productos d venta
                 pensado por Larvalisk
+
+                <h1>
+                    WORKING ON IT...
+                </h1>
                <!-- poner un carrusel -->
 
                
@@ -309,7 +336,7 @@
             <div>+2 392 3929 210</div>
             <div>info@yourdomain.com</div>
         </div>
-        <div class="divider cf"></div>
+        <div class="divide cf"></div>
     
         <p class="all_rigths">© 2020 Zerling Shop. All rights reserved</p>
     </footer>
@@ -388,6 +415,6 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/photoswipe.min.js"></script>
     <script src="js/photoswipe-ui-default.min.js"></script>
-    <script src="js/q.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>
